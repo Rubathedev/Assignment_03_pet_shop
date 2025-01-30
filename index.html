@@ -32,11 +32,14 @@
         color: black;
         border: 1px solid  rgb(255,221,39)
     }
+    .space{
+        margin-top: 900px;
+    }
 </style>
 </head>
 <body>
     <!-- navbar -->
-     <header class="text-font">
+     <header class="text-font lg:mb-96">
         <nav class=" bg-[#FFF9F4]  ">
            <!-- nav container -->
             <div class="text-font flex justify-between items-center p-5 lg:container lg:mx-auto" >
@@ -64,7 +67,7 @@
         </nav>
         <hr class="lg:hidden border-2 border-gray-200">
         <!-- banner section -->
-         <div class="lg:container lg:mx-auto lg:flex-row flex-col flex p-5 relative" >
+         <div class="lg:container lg:mx-auto lg:flex-row flex-col flex p-7 lg:pb-72  relative"  >
             <!-- banner info -->
             <div class=" lg:mt-20 lg:absolute left-10 top-0 z-10" >
                 <h1 class="header-font text-6xl">Pamper Your Pet, <br> Because They Deserve the Best</h1>
@@ -74,14 +77,68 @@
                 
             </div>
             <!-- banner picture -->
-             <div class="lg:relatvie">
+             <div class="lg:relatvie lg:pb-64">
                 <img class=" lg:absolute inset-y-0 right-0 z-0" src="./c1-assets/cat-big.png" alt="cat's big picture">
              </div>
          </div>
      </header>
      <!-- main section -->
-     <main>
-        
+     <main class="">
+        <!-- Browse By Categories -->
+        <section class="container mx-auto   ">
+              <h1 class="header-font text-4xl mb-10">Browse By Categories</h1> 
+                 <!-- catagories of cards container -->
+              <div class="grid  lg:grid-cols-6  grid-cols-2  lg:gap-x-6 gap-2 ">
+                <!-- card 1 -->
+                 <div class="flex flex-col justify-center items-center bg-[#F9DF8A] p-10 gap-2 rounded-lg">
+                 <div class=" w-fit">
+                     <div class="p-5 rounded-full bg-white"><img src="./c1-assets/dog-cartoon.png" alt="profile"></div>
+                 </div>
+                 <h2 class="header-font">dog</h2>
+                 <p class="text-font">3 Items</p>
+                </div>
+                <!-- card 2 -->
+                <div class="flex flex-col justify-center items-center bg-[#F9DF8A] p-10  gap-2 rounded-lg">
+                    <div class=" ">
+                        <div class="p-5 rounded-full bg-white"><img src="./c1-assets/fish-cartoon.png" alt="profile"></div>
+                    </div>
+                    <h2  class="header-font ">dog</h2>
+                    <p class="text-font ">3 Items</p>
+                   </div>
+                   <!-- card 3 -->
+                 <div class="flex flex-col justify-center items-center  bg-[#F9DF8A] p-10  gap-2 rounded-lg">
+                    <div >
+                        <div class="p-5 rounded-full bg-white"><img src="./c1-assets/cat-cartoon.png" alt="profile"></div>
+                    </div>
+                    <h2 class="header-font text-center">dog</h2>
+                    <p class="text-font text-center">3 Items</p>
+                   </div>
+                     <!-- card 4 -->
+                 <div class="flex flex-col justify-center items-center  bg-[#F9DF8A] p-10 gap-2 rounded-lg">
+                    <div >
+                        <div class="p-5 rounded-full bg-white"><img src="./c1-assets/rabbit-cartoon.png" alt="profile"></div>
+                    </div>
+                    <h2 class="header-font">dog</h2>
+                    <p class="text-font">3 Items</p>
+                   </div>
+                   <!-- card 5-->
+                 <div class="flex flex-col justify-center items-center  bg-[#F9DF8A] p-10 gap-2 rounded-lg">
+                    <div >
+                        <div class="p-5 rounded-full bg-white"><img src="./c1-assets/mouse-cartoon.png" alt="profile"></div>
+                    </div>
+                    <h2 class="header-font">dog</h2>
+                    <p class="text-font">3 Items</p>
+                   </div>
+                   <!-- card 6 -->
+                 <div class="flex flex-col justify-center items-center  bg-[#F9DF8A] p-10 gap-2 rounded-lg">
+                    <div >
+                        <div class="p-5 rounded-full bg-white"><img src="./c1-assets/bird-cartoon.png" alt="profile"></div>
+                    </div>
+                    <h2 class="header-font">dog</h2>
+                    <p class="text-font">3 Items</p>
+                   </div>
+              </div>
+         </section>
      </main>
 </body>
 </html>
