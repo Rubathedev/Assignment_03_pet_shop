@@ -3,12 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Browse&Pets</title>
-    <link rel="shortcut icon" href="./favicon-icon/favicon.ico" type="image/x-icon">   
+    <title>Browse4Pets</title>
+    <!-- text cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon-icon/favicon.ico" type="image/x-icon"> 
+      <!--tailwind and  daisyui  -->
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<!-- font awsome  -->
+<script src="https://kit.fontawesome.com/c34727ef8e.js" crossorigin="anonymous"></script>
+
+<style>
+    .header-font{
+        font-family: "ADLaM Display", serif;
+    }
+    .text-font{
+        font-family: "Sora", serif;
+    }
+    .primary-color{
+        color: rgb(255,221,39)
+    }
+    .btn{
+        padding : 0px 30px;
+        background-color:  rgb(255,221,39) ;
+        color: black;
+        border: 1px solid  rgb(255,221,39)
+    }
+</style>
 </head>
 <body>
-    
+    <!-- navbar -->
+     <header class="text-font">
+        <nav class=" bg-[#FFF9F4]  ">
+           <!-- nav container -->
+            <div class="text-font flex justify-between items-center p-5 lg:container lg:mx-auto" >
+            <!-- nav-logo  -->
+             <div class="flex items-center gap-2 text-font text-3xl  ">
+                <img class="" src="./c1-assets/logo-header.png" alt="Logo">
+                <h1 class="hidden lg:block ">Browse<span class="">4</span>Pet</h1>
+             </div>
+             <!-- links -->
+              <div class="lg:flex gap-8 hidden lg:block ">
+              <p><a href="#">Find a pet</a></p>
+              <p><a href="#">Breeds</a></p>
+              <p><a href="#">Contact us</a></p>
+            </div>
+            <!-- buttons -->
+            <div class=" hidden lg:block ">
+                <i  class="fa-regular fa-bell ml-2"></i>
+                <i class="fa-solid fa-magnifying-glass m-2"></i>
+                <button class="btn bg-transparent">login</button>
+                <button class="btn">Register</button>
+            </div>
+            <!-- bars section -->
+            <i class="fa-solid fa-bars lg:hidden fa-2x"></i>
+        </div>
+        </nav>
+        <hr class="lg:hidden border-2 border-gray-200">
+        <!-- banner section -->
+         <div class="lg:container lg:mx-auto lg:flex-row flex-col flex p-5 relative" >
+            <!-- banner info -->
+            <div class=" lg:mt-20 lg:absolute left-10 top-0 z-10" >
+                <h1 class="header-font text-6xl">Pamper Your Pet, <br> Because They Deserve the Best</h1>
+                <p class="text-xl mt-3 mb-3">Discover a world of treats, toys, and essentials handpicked for <br>
+                     your furry friends. Shop now and make tails wag with joy!</p>
+                <button class="btn mt-3">Find a pet</button>
+                
+            </div>
+            <!-- banner picture -->
+             <div class="lg:relatvie">
+                <img class=" lg:absolute inset-y-0 right-0 z-0" src="./c1-assets/cat-big.png" alt="cat's big picture">
+             </div>
+         </div>
+     </header>
+     <!-- main section -->
+     <main>
+        
+     </main>
 </body>
 </html>
